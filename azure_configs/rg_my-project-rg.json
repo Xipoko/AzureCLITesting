@@ -1,0 +1,8 @@
+{
+  "name": "my-project-rg",
+  "location": "eastus",
+  "tags": {
+    "environment": "dev",
+    "project": "demo"
+  }
+}

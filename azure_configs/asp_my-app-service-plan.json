@@ -1,0 +1,7 @@
+{
+  "name": "my-app-service-plan",
+  "resourceGroup": "my-project-rg",
+  "location": "eastus",
+  "sku": "B1",
+  "isLinux": true
+}

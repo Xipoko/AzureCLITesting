@@ -1,0 +1,12 @@
+{
+  "storageAccountName": "mystorageaccount123",
+  "resourceGroup": "my-project-rg",
+  "location": "eastus",
+  "sku": {
+    "name": "Standard_LRS"
+  },
+  "kind": "StorageV2",
+  "accessTier": "Hot",
+  "allowBlobPublicAccess": false,
+  "supportsHttpsTrafficOnly": true
+}

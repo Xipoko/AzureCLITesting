@@ -1,0 +1,9 @@
+az ad user create `
+              --display-name "deez hutz" `
+              --password "StrongPassword1!" `
+              --user-principal-name "deeznuhtz@DallasBrown12345Gmail.onmicrosoft.com"
+az ad user create `
+              --display-name "Vanessa Gomes" `
+              --password "Password123123!" `
+              --user-principal-name "vanessagomes@DallasBrown12345Gmail.onmicrosoft.com" `
+              --mail-nickname "vanessagomes"

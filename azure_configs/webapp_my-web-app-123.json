@@ -1,0 +1,13 @@
+{
+  "name": "my-web-app-123",
+  "resourceGroup": "my-project-rg",
+  "plan": "my-app-service-plan",
+  "runtime": "PYTHON|3.9",
+  "deployFromLocalGit": false,
+  "appSettings": [
+    {
+      "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
+      "value": "false"
+    }
+  ]
+}

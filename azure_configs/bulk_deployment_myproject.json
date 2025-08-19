@@ -1,0 +1,33 @@
+{
+  "deploymentInfo": {
+    "projectName": "myproject",
+    "deploymentDate": "2025-08-18T19:19:48.553251",
+    "location": "eastus"
+  },
+  "resourceGroup": {
+    "name": "rg-myproject-20250818",
+    "location": "eastus",
+    "tags": {
+      "project": "myproject",
+      "environment": "development",
+      "created": "20250818"
+    }
+  },
+  "storageAccount": {
+    "name": "stmyproject20250818",
+    "sku": "Standard_LRS"
+  },
+  "appServicePlan": {
+    "name": "asp-myproject",
+    "sku": "B1"
+  },
+  "webApp": {
+    "name": "webapp-myproject-20250818",
+    "runtime": "PYTHON|3.9"
+  },
+  "virtualMachine": {
+    "name": "vm-myproject",
+    "size": "Standard_B2s",
+    "adminUsername": "azureuser"
+  }
+}
