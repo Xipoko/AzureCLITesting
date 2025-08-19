@@ -5,13 +5,12 @@ DisplayName = input("Enter the display name for the new user: ")
 UserPrincipalName = input("Enter the full name for the new user with no spaces: (ex. xipokobeats)")
 Password = input("Enter a strong password: ") # Set a strong password
 print(f"az ad user create --display-name {DisplayName} --password {Password} --user-principal-name {UserPrincipalName }@DallasBrown12345Gmail.onmicrosoft.com")
-with open("NewAzureUser_{DisplayName}", "w") as file:
+with open("NewAzureUser", "w") as file:
     file.write(f'''az ad user create `
               --display-name "{DisplayName}" `
               --password "{Password}" `
               --user-principal-name "{UserPrincipalName}@DallasBrown12345Gmail.onmicrosoft.com"
 ''')
-
 
 
 #az ad user create `
