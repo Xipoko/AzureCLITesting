@@ -1,17 +1,40 @@
 # Create a new Azure AD user using Azure CLI
 # Replace the values below with your desired user details
+from datetime import datetime
+
 
 DisplayName = input("Enter the display name for the new user: ")
 UserPrincipalName = input("Enter the full name for the new user with no spaces: (ex. xipokobeats)")
 Password = input("Enter a strong password: ") # Set a strong password
-print(f"az ad user create --display-name {DisplayName} --password {Password} --user-principal-name {UserPrincipalName }@DallasBrown12345Gmail.onmicrosoft.com")
-with open("NewAzureUser", "w") as file:
-    file.write(f'''az ad user create `
+
+filename = f"{UserPrincipalName}_AzureUser"
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+filename2 = f"All_AzureUsers"
+filename3 = f"UserDatabase"
+filename4 = f"testing"
+
+content = f'''az ad user create `
               --display-name "{DisplayName}" `
               --password "{Password}" `
               --user-principal-name "{UserPrincipalName}@DallasBrown12345Gmail.onmicrosoft.com"
-''')
+'''
 
+with open(filename, "w") as file:
+    file.write(content)
+print(f"File Saved: {filename}")
+
+with open(filename2, "a") as file:
+    file.write(content)
+print(f"File Saved: {filename2}")
+
+
+#for filename in [filename3, filename4]:
+#    with open(filename, "w") as file:
+#        file.write(content)
+#    print(f"File saved: {filename}")
+
+print(f"Command saved to file: {filename}")
+print(f"Command saved to file: {filename2}")
 
 #az ad user create `
 #  --display-name $DisplayName `

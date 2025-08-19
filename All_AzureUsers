@@ -1,0 +1,12 @@
+az ad user create `
+              --display-name "Puto Maluco" `
+              --password "PassPutoMaluco123!" `
+              --user-principal-name "putomaluco@DallasBrown12345Gmail.onmicrosoft.com"
+az ad user create `
+              --display-name "Cheese Head" `
+              --password "Passqweqweqwe" `
+              --user-principal-name "cheeseheadboy@DallasBrown12345Gmail.onmicrosoft.com"
+az ad user create `
+              --display-name "chunky" `
+              --password "Passchunky123" `
+              --user-principal-name "chunkyboy@DallasBrown12345Gmail.onmicrosoft.com"

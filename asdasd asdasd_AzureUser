@@ -1,0 +1,4 @@
+az ad user create `
+              --display-name "asdasd asdasd" `
+              --password "Pass123123123123" `
+              --user-principal-name "dfgdsfg@DallasBrown12345Gmail.onmicrosoft.com"
